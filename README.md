@@ -1,5 +1,8 @@
 # In One Lesson - Video Scripts
 
+> [!NOTE]  
+> Click the [Discussions](https://github.com/In-One-Lesson/VideoScripts/discussions) tab above to provide feedback or ideas on the scripts below.
+
 Below are scripts for about 50 videos. The scripts are in order from basic to more advanced. Not sure if this will be one long video or if each script will be its own video (or both?).
 
 Each video starts with the working title followed by a setup of the video that may explain the reasoning behind the video or an explanation of the visuals, followed by the script.
