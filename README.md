@@ -401,7 +401,6 @@ Each video starts with the working title followed by a setup of the video that m
 * You can keep track of as many unfinished tasks as you like, it just matters how big the doing section of your list can get.
 * If it gets too big, then you overwrite some of your todo items above the doing section
 * This is called a stack overflow in programming.
-
 * Sharing your todo list with others allows them to use the doing section of your list also.
 * If you need someone else to help you do something, you add the item number of your next task to the top of the doing section
 * This way you'll know what to do next when you get the list back.
@@ -439,7 +438,6 @@ Each video starts with the working title followed by a setup of the video that m
 * When that condition is met, the function finishes and the data that was piled in the stack each time the function was called is unstacked as each call returns its data to the previous call all the way back to the first which returns one final result.
 * This repetitive use of the same list of instructions is how all loops are performed in a program, except sometimes the loops aren't named.
 * When they are, it's called recursion: a function calling itself.
-
 * Sometimes the function stacks its data up with each call, but preferably not since the stack only has a limited capacity.
 * If a recursive function doesn't use the stack to accumulate data, it's called tail call recursion because the function only calls itself at the tail end of its list of instructions.
 * This means the result doesn't need to be processed by any previous calls of the function since they don't do anything with the result after they get it.
@@ -486,12 +484,10 @@ Each video starts with the working title followed by a setup of the video that m
 * It might also be the first byte of the first instruction in a function.
 * Or it could even be a pointer itself.
 * An address can only be treated like data because they are both represented as binary numbers.
-
 * These pointers make it possible to use RAM more efficiently since a large data structure doesn't have to be copied around to multiple places in RAM.
 * The address of the first byte of that data structure can be copied around instead.
 * This gives functions access to that data structure directly without having to make a copy of it.
 * The data in the structure can be changed in place by these functions since they know how to find it in RAM.
-
 * A pointer is always the same size even if it is changed to point to a different data structure.
 * That's because all RAM addresses in a computer are the same size so it always takes the same number of bytes to represent them.
 * Since pointers are always the same size, they always take up the same amount of space, even when they're used in a larger data structure.
@@ -509,7 +505,6 @@ Each video starts with the working title followed by a setup of the video that m
 * This is why the functions that process this type of data structure can process any particular copy of that data structure.
 * These functions are programmed to find certain data fields in that data structure at certain places in RAM, relative to the starting address of that particular data structure.
 * Since the pointer to the string of characters holding the job title is always the second data element in the employee data structure, for instance, the function that changes the job title always knows where to find it.
-
 * Data structures are classified according to how their data is laid out in RAM.
 * Each layout is given a name.
 * The employee classification, or class for short, is the layout of data in RAM as needed for the fields that hold the data for an employee.
@@ -635,7 +630,6 @@ Each video starts with the working title followed by a setup of the video that m
 * All the history of changes that have ever been made, along with all the actual text from old versions of the text files, are kept in what's called a repository, or repo for short
 * The repo is just the name used for the whole project history for a single application
 * However any particular version of the application is kept in what's called a branch
-
 * The entire set of text files for the current version of the application are kept in a single branch, for instance- often called the main branch.
 * A single repo may have many branches within it, with each branch usually containing the entire source code for that program but each with a slightly different version of the application.
 * Maybe one branch is that main branch that has the code used in the live system, while another branch has nearly the exact same code except with a few small changes to fix a bug found in the live system.
@@ -644,10 +638,8 @@ Each video starts with the working title followed by a setup of the video that m
 * So a single branch within the repository will consist of all the files needed for the application.
 * This means that a developer only works on one specific branch at a time.
 * It also means that only a single folder on the developer's machine has those files in it - so what happens when the developer decides to look at a different version of the application by switching which branch is active on his local machine
-
 * If the developer wanted to checkout a different branch, all the files in that local folder would be deleted and replaced with the files from that other branch.
 * Any changes made locally to the files in the old branch will be lost when the new branch is checked out, unless those changes had already been added to the version control system.
-
 * There is a multi step process, above and beyond just saving the files, that allows them to be tracked by version control.
 * Using Git, for instance those files must first be added to a local index of files.
 * That index must then be committed to that branch
@@ -656,7 +648,6 @@ Each video starts with the working title followed by a setup of the video that m
 * In other words, until the updated branch is pushed up to the remote server and then pulled down to their machine, no other developer can see the changes made.
 * To keep track of all this, Git uses a hidden subfolder in the local folder to keep track of all the data on all the branches.
 * This subfolder contains compressed files that ultimately contain all the text for all the files in all the branches.
-
 * All the code in all the branches in version control is saved on each developer's machine and on the remote server.
 * Changes made to one branch on one machine do not automatically update to all the other machines as we discussed.
 * Any changes made to a branch are first saved, indexed, and committed locally on that machine, and then that updated branch is pushed back up to the remote server.
@@ -672,7 +663,6 @@ Each video starts with the working title followed by a setup of the video that m
 * The executable files must be built from the text files by a compiler.
 * Since the executable files are large and since they can be rebuilt from the text files at any time, they're not saved in the version control system with the text files.
 * Instead, they're built only when they're needed.
-
 * Each developer's computer builds the executable files for an application when the developer is testing locally and a remote server will also need to build them again when the changes are ready to go live.
 * Often there is a long list of steps that must be taken when updating an application, including updating the main branch, building executable files and then releasing those executable files to the application server.
 * Online services, like GitHub, exist to allow you to manage all these steps in one place.
@@ -747,7 +737,6 @@ Each video starts with the working title followed by a setup of the video that m
 * The import address tables and export address tables are in these sections as well allowing your program to call functions in these DLLs.
 * All the specific addresses used were determined by the operating system loader program that created the process address space for your executable file when you ran it.
 * The actual execution of the code in your process address space occurs in a thread.
-
 * A thread is a concept used by the operating system to separate the processing of one sequence of instructions from another.
 * The CPU can process multiple sequences of instructions at a time.
 * CPUs normally have multiple cores and each core is usually hyper threaded which means it can process multiple threads at a time.
@@ -862,7 +851,6 @@ Each video starts with the working title followed by a setup of the video that m
 * This is how executable files work. The operating system is built to understand a particular binary format of executable files, such as the Portable Executable format used on Windows, and decipher these executable files based upon where it expects to find the data inside.
 * Other file formats may encode data using bytes that strictly represent text characters.
 * These text files are the basis of not only every programming language file, but also most data files sent over the internet.
-
 * Data structures can be encoded in text files using an extra layer of encoding where, for instance, words are separated by colons to represent data elements of names and values.
 * These name value pairs are then separated by commas to form a list and elements can even be nested inside other elements to form hierarchies.
 * Using the parsing rules for this encoding format, a program then determines what relationships these elements have to each other and converts the entire data structure into a computer-friendly data format.
@@ -885,7 +873,6 @@ Each video starts with the working title followed by a setup of the video that m
 * A row of data in one table can relate to a row in another table by storing the other row's ID as one of its data elements.
 * This allows complex relationships between data sets to be created.
 * Programmers control the structure of database tables and the data inside them using a special programming language called SQL.
-
 * For example, using SQL you can select data elements by name from a particular table where the values of those elements match the values you specify.
 * You can also use SQL to delete that data in nearly the same way and insert it again by listing out the names of the data elements followed by their values.
 
