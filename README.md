@@ -7,7 +7,7 @@ Below are scripts for about 50 videos. The scripts are in order from basic to mo
 
 Each video starts with the working title followed by a setup of the video that may explain the reasoning behind the video or an explanation of the visuals, followed by the script.
 
-# Unlocking the Mysteries of Bits: The Building Blocks of Digital Life
+# Bits are Not On the Wire, they Are the Wire
 
 ## Setup: This was by far my biggest misconception when learning how computers work. I thought bits were discrete little pulses of energy that traveled down a wire. I didn't realize that a bit exists everywhere on a wire at once and that that fact was pivotal to how computers worked.
 
@@ -36,7 +36,7 @@ Each video starts with the working title followed by a setup of the video that m
 * This setup would not be possible if a bit traveled down wires like a car on a road since that car can only be in one place at a time.
 * The design of the CPU inherently relies on the simultaneous presence of a bit in multiple places at once to work.
 
-# Treating electrified wires as bits
+# Mimic Machines
 
 ## Setup: It's so odd to think of an electrified wire as having a value on it, like a number or a Boolean. However, due to the clever design of CPUs, they can be treated as number crunchers even though they're simply a collection of wires and transistors. I think it's important for beginners to separate the idea of bits from electrified wires so they know that we're all just pretending that the computers have 1s and 0s in them somewhere when in reality it's just a useful analogy designed into the hardware.
 
