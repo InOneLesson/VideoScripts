@@ -9,9 +9,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Bits are Not On the Wire, they Are the Wire
 
-## Setup: This was by far my biggest misconception when learning how computers work. I thought bits were discrete little pulses of energy that traveled down a wire. I didn't realize that a bit exists everywhere on a wire at once and that that fact was pivotal to how computers worked.
+This was by far my biggest misconception when learning how computers work. I thought bits were discrete little pulses of energy that traveled down a wire. I didn't realize that a bit exists everywhere on a wire at once and that that fact was pivotal to how computers worked.
 
-## Script:
+
 
 * You've probably seen videos like this where bits move down a wire like cars on a road.
 * That's not how bits works.
@@ -36,9 +36,9 @@ Each video starts with the working title followed by a setup of the video that m
 * This setup would not be possible if a bit traveled down wires like a car on a road since that car can only be in one place at a time.
 * The design of the CPU inherently relies on the simultaneous presence of a bit in multiple places at once to work.
 
-# Transistors Mimic Machines
+# Thinking Outside the Wire
 
-## Setup: It's so odd to think of an electrified wire as having a value on it, like a number or a Boolean. However, due to the clever design of CPUs, they can be treated as number crunchers even though they're simply a collection of wires and transistors. I think it's important for beginners to separate the idea of bits from electrified wires so they know that we're all just pretending that the computers have 1s and 0s in them somewhere when in reality it's just a useful analogy designed into the hardware.
+It's so odd to think of an electrified wire as having a value on it, like a number or a Boolean. However, due to the clever design of CPUs, they can be treated as number crunchers even though they're simply a collection of wires and transistors. I think it's important for beginners to separate the idea of bits from electrified wires so they know that we're all just pretending that the computers have 1s and 0s in them somewhere when in reality it's just a useful analogy designed into the hardware.
 
 * An electrified wire can be thought of as a number like 1, or a logical value like true, or either side of any other binary concept
 * When one electrified wire controls another electrified wire in a transistor, the value it represents can also be copied to that other wire
@@ -53,7 +53,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Bits are a universal concept
 
-## Setup: We all think of computers as having a bunch of 1s and 0s in them even when each component inside may be very different from the others. So how do we maintain consistency across these components at the most basic level?
+We all think of computers as having a bunch of 1s and 0s in them even when each component inside may be very different from the others. So how do we maintain consistency across these components at the most basic level?
 
 * More often than not, electrified wires in a computer are treated as numbers - 1s and 0s, binary digits, or bits for short
 * This is not because all the data in a computer is always numeric
@@ -76,7 +76,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Computers copy data, they don't move it
 
-## Setup: I didn't realize for a long time that I had a fundamental misunderstanding of computers that hindered my learning and progress. People generally refer to data as moving around in the computer. That seems right until you start to apply that analogy to other things you're learning. Then you can get tripped up really bad without knowing why.
+I didn't realize for a long time that I had a fundamental misunderstanding of computers that hindered my learning and progress. People generally refer to data as moving around in the computer. That seems right until you start to apply that analogy to other things you're learning. Then you can get tripped up really bad without knowing why.
 
 * Moving something and copying something are two very different paradigms with very different rules.
 * If you move something, it is no longer in its original location.
@@ -94,7 +94,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How the ALU Works
 
-## Setup: The ALU is used for nearly every operation in the CPU. It's important to get a basic understanding of what it is and how it works early on.
+The ALU is used for nearly every operation in the CPU. It's important to get a basic understanding of what it is and how it works early on.
 
 * Any electrified wire can be treated as though it has a 1 on it, or a true value, or sometimes both at the same time.
 * The more cleverly designed components may be able to switch back and forth between how their wires are treated
@@ -113,9 +113,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # A Program is a To-Do List
 
-## Setup: Programming truly is just writing a to-do list for computers to follow. This video introduces that idea.
+Programming truly is just writing a to-do list for computers to follow. This video introduces that idea.
 
-## Script:
+
 
 * Computer memory is just like a numbered todo list where the numbers are written in pen but the items are written in pencil and can change.
 * This todo list is a little unique, though.
@@ -134,9 +134,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Different Numbers Are the Same Count
 
-## Setup: How can "10" and "10" mean two different things? They are the same number. However, when you understand that there is an even more fundamental concept that numbers, a count, then you can understand that two numbers that look the same can represent different counts depending upon what numbering system is used.
+How can "10" and "10" mean two different things? They are the same number. However, when you understand that there is an even more fundamental concept that numbers, a count, then you can understand that two numbers that look the same can represent different counts depending upon what numbering system is used.
 
-## Script:
+
 
 * RAM stores data as binary numbers.
 * Binary numbers are just like regular decimal numbers except they can only use two characters for each digit instead of ten.
@@ -151,9 +151,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Computer Memory Has Two Lists of Numbers, Not One
 
-## Setup: This was a misconception I had for many years, I thought RAM only had data. I didn't realize each byte of data had an address, another binary number. Knowing about addresses is pivotal to knowing about pointers and how computers work in general.
+This was a misconception I had for many years, I thought RAM only had data. I didn't realize each byte of data had an address, another binary number. Knowing about addresses is pivotal to knowing about pointers and how computers work in general.
 
-## Script:
+
 
 * RAM stores data at specific addresses.
 * That data and its address are each binary numbers.
@@ -168,9 +168,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # "Byte" Doesn't Always Mean What You Think
 
-## Setup: I didn't realize that I had been conflating these two things until recently. When someone says "byte", sometimes they mean the value of the binary number regardless of its location in RAM and sometimes they mean the location of the binary number in RAM regardless of its value. Separating these two senses of the word early for beginners who are learning programming would be very helpful to them I think.
+I didn't realize that I had been conflating these two things until recently. When someone says "byte", sometimes they mean the value of the binary number regardless of its location in RAM and sometimes they mean the location of the binary number in RAM regardless of its value. Separating these two senses of the word early for beginners who are learning programming would be very helpful to them I think.
 
-## Script:
+
 
 * The term "byte" may refer to two different but related things: a value stored in RAM regardless of its location or a location in RAM regardless of its value.
 * For instance, the decimal number 53 can be stored in a byte.
@@ -183,9 +183,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Programs Work From Anywhere
 
-## Setup: This is an interesting one for me. Since bytes in RAM are addressed using numbers, it makes relative addressing possible. Relative addressing is critical to loading programs into memory, indexing into arrays, and all kinds of other techniques in programming. They would not be possible if something like numbers weren't used to address bytes in RAM since numbers have the concept of "next" and "previous".
+This is an interesting one for me. Since bytes in RAM are addressed using numbers, it makes relative addressing possible. Relative addressing is critical to loading programs into memory, indexing into arrays, and all kinds of other techniques in programming. They would not be possible if something like numbers weren't used to address bytes in RAM since numbers have the concept of "next" and "previous".
 
-## Script:
+
 
 * Not only do RAM addresses never change, they are always in order, starting at address 0 and increasing by one.
 * This allows programmers to always be able to refer to an address relative to any other address, the 3rd address after the starting address, for instance.
@@ -194,9 +194,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # RAM Addresses Start at 0
 
-## Setup: This is not as big of a deal, but still interesting enough to include I think. There were a lot of times early on when I was learning programming where it confused me that the 3rd item in a list has a "2" for its index. Off-by-one errors in programming are common because of this concept which is why I wanted to teach it early.
+This is not as big of a deal, but still interesting enough to include I think. There were a lot of times early on when I was learning programming where it confused me that the 3rd item in a list has a "2" for its index. Off-by-one errors in programming are common because of this concept which is why I wanted to teach it early.
 
-## Script:
+
 
 * RAM addresses start at 0 which means the first address in RAM is 0, not 1.
 * This makes all RAM addresses off by 1, often including relative addresses.
@@ -212,9 +212,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Hexadecimal is Useful For Coders
 
-## Setup: Rarely do you look at raw data in RAM using anything other than hexadecimal values. That tends to lead people to think that hexadecimal values are somehow pivotal to the way computers work. They're not. They just represent the 1s and 0s of computing in a more compact way, which is why they're used so often. However, it's important to understand that the computer doesn't actually use hexadecimal values in any way. They're just a way to represent binary values in a more programmer-friendly way.
+Rarely do you look at raw data in RAM using anything other than hexadecimal values. That tends to lead people to think that hexadecimal values are somehow pivotal to the way computers work. They're not. They just represent the 1s and 0s of computing in a more compact way, which is why they're used so often. However, it's important to understand that the computer doesn't actually use hexadecimal values in any way. They're just a way to represent binary values in a more programmer-friendly way.
 
-## Script:
+
 
 * Binary numbers are often converted into decimal or even hexadecimal notation to make them easier to read.
 * Hex means 6 and deci means 10 so added together that's 16 characters that can be used in each column.
@@ -227,9 +227,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Text Files Don't Use Letters
 
-## Setup: This is one of the biggest lessons I would have wanted to know early on. How do text files actually store text?
+This is one of the biggest lessons I would have wanted to know early on. How do text files actually store text?
 
-## Script:
+
 
 * Programs are written in text files.
 * When you open up a text file, each letter you see on the screen is represented by a specific pattern of colored pixels created from a font file somewhere.
@@ -242,9 +242,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # In Computers, Every Letter is a Number and Every Number is a Number
 
-## Setup: Unicode is such an interesting system. You use numbers to represent raw concepts. Those numbers can then have another layer of abstraction between the number itself and its binary representation in RAM using UTF. This is a great example of the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967335439&usg=AOvVaw0-FeoJmXUnBx-Np46K7AZ1)" where adding another layer of indirection can solve a problem in programming.
+Unicode is such an interesting system. You use numbers to represent raw concepts. Those numbers can then have another layer of abstraction between the number itself and its binary representation in RAM using UTF. This is a great example of the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967335439&usg=AOvVaw0-FeoJmXUnBx-Np46K7AZ1)" where adding another layer of indirection can solve a problem in programming.
 
-## Script:
+
 
 * Unicode is a list of numbers called code points where each code point represents a specific concept.
 * That concept can also be represented by words like "lowercase letter 'r'".
@@ -261,9 +261,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Bytes Travel in Packs
 
-## Setup: This is an important concept to understand I think. You can't represent a value using anything smaller than a byte (even true/false - unless you've packed multiple true/false values into one byte: often called "flags") and usually you have to move multiple bytes at the same time due to hardware constraints.
+This is an important concept to understand I think. You can't represent a value using anything smaller than a byte (even true/false - unless you've packed multiple true/false values into one byte: often called "flags") and usually you have to move multiple bytes at the same time due to hardware constraints.
 
-## Script:
+
 
 * Bytes are copied from place to place in groups of the same size to speed things up, even if there are more bytes in that group than is needed to store your data.
 * On older 32-bit computers, the CPU copied data from RAM in 32-bit chunks, or 4 bytes at a time.
@@ -276,9 +276,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Computers Use Horizontal Numbers
 
-## Setup: This is often called little-endian and big-endian, but those name seemed so confusing to me when I first started. I think just explaining them for what they are would have been so much more helpful.
+This is often called little-endian and big-endian, but those name seemed so confusing to me when I first started. I think just explaining them for what they are would have been so much more helpful.
 
-## Script:
+
 
 * A number grows from right to left, but conceptually the data in RAM grows from top to bottom.
 * So when storing a large number in RAM, which end do you put in RAM first?
@@ -291,9 +291,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Code Does Not Run on Computers
 
-## Setup: The phrase "run the code" makes people think that the code they type into a text editor can eventually just run directly on the CPU. I don't think it's always clear that the code is really just a set of instructions for another program to interpret, the compiler (or interpreter). This lesson comes after the previous lessons explaining how text files work which build up to this lesson so people know what is actually happening when you are tying code into a text file and why that can't be directly run by the CPU.
+The phrase "run the code" makes people think that the code they type into a text editor can eventually just run directly on the CPU. I don't think it's always clear that the code is really just a set of instructions for another program to interpret, the compiler (or interpreter). This lesson comes after the previous lessons explaining how text files work which build up to this lesson so people know what is actually happening when you are tying code into a text file and why that can't be directly run by the CPU.
 
-## Script:
+
 
 * When programming you press keys that are stored as bytes in a text file.
 * Those bytes represent Unicode code points.
@@ -311,9 +311,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Computers Don't Care About Data Types
 
-## Setup: This is critical to understand I think. Data types don't exist anywhere in the computer. They're not necessary for writing low-level machine code. They're only used by compilers to help the programmer reduce errors when writing high-level code. Ultimately, the CPU doesn't have a concept of data types.
+This is critical to understand I think. Data types don't exist anywhere in the computer. They're not necessary for writing low-level machine code. They're only used by compilers to help the programmer reduce errors when writing high-level code. Ultimately, the CPU doesn't have a concept of data types.
 
-## Script:
+
 
 * Writing instructions for a compiler instead of a CPU can make programming a lot easier, but it can also change your mental model as you often have to think about how the compiler will interpret your instructions, not just the CPU.
 * In fact, a lot of the instructions you give the compiler, such as data types, are never converted to CPU instructions.
@@ -327,9 +327,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # What is a Programming Language
 
-## Setup: Understanding that the compiler is not the programming language and that the programming language is just a set of standards that the compiler enforces on text files is important, I think. These concepts can easily be conflated in the mind of beginners I think. Explicitly separating them out is important.
+Understanding that the compiler is not the programming language and that the programming language is just a set of standards that the compiler enforces on text files is important, I think. These concepts can easily be conflated in the mind of beginners I think. Explicitly separating them out is important.
 
-## Script:
+
 
 * The program you write must meet the exact specifications of the language you are using.
 * The language is just a set of standards and the compiler enforces those standards.
@@ -342,9 +342,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How to See Every C Program
 
-## Setup: Getting an initial grasp on the visual structure of a program is important to beginners, I think. Being able to just look at a formatted text file and just kind of have a sense of what's going on is important. This video will attempt to do that for the C programming language which so many other languages are based off of.
+Getting an initial grasp on the visual structure of a program is important to beginners, I think. Being able to just look at a formatted text file and just kind of have a sense of what's going on is important. This video will attempt to do that for the C programming language which so many other languages are based off of.
 
-## Script:
+
 
 * Most people who create new programming languages, in other words new standards on how a compiler should treat a text file, use existing ideas from other programming languages.
 * This tends to lead towards certain programming language styles with key similarities that help programmers learn new languages in that style more easily.
@@ -365,9 +365,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Programming Functions Stack Up
 
-## Setup: This is such a cool thing to follow in my opinion, understand how functions use the stack. Since modern programs use the stack for almost everything, and function calls can become deeply nested, it's important to walk slowly through how the stack works so beginners can get a good concept of it.  
+This is such a cool thing to follow in my opinion, understand how functions use the stack. Since modern programs use the stack for almost everything, and function calls can become deeply nested, it's important to walk slowly through how the stack works so beginners can get a good concept of it.  
 
-## Script:
+
 
 * Under the hood, functions are called using special CPU instructions that let your code continue where it left off when the function code is finished.
 * The CPU has a special register called the stack pointer that keeps up with the top of a stack of data used by these unfinished functions.
@@ -390,9 +390,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How the Stack Works: (aka Doing Lists)
 
-## Setup: This concept of a "doing list" made so much sense to me as an explanation for how the stack works. It really helps you understand what the purpose of the stack is and why its so important.
+This concept of a "doing list" made so much sense to me as an explanation for how the stack works. It really helps you understand what the purpose of the stack is and why its so important.
 
-## Script:
+
 
 * The stack is like a doing list.
 * A doing  list is like a todo list but items are added to it backwards, from the bottom up, and then erased top down when they're completed.
@@ -413,9 +413,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Understanding Variables
 
-## Setup: The basic concept of variables is important to understand as the name for an address in RAM.
+The basic concept of variables is important to understand as the name for an address in RAM.
 
-## Script:
+
 
 * A compiler allows you to name certain addresses in RAM so you can store data at those addresses and easily refer back to them later.
 * Names given to a RAM address where data is kept is usually called a variable since the value of that data can vary over time.
@@ -426,11 +426,11 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Recursion Works
 
-## Setup: This is the simplest explanation of recursion that I can think of, it's a named loop. It's implemented in assembly the exact same way as a regular loop, a jump back up to an earlier instruction in RAM over and over. It's just that recursive loops have names for the earlier instruction (the function name) and they often use the stack to keep track of data in the loop.
+This is the simplest explanation of recursion that I can think of, it's a named loop. It's implemented in assembly the exact same way as a regular loop, a jump back up to an earlier instruction in RAM over and over. It's just that recursive loops have names for the earlier instruction (the function name) and they often use the stack to keep track of data in the loop.
 
 ## Stack overflows set the limit for recursive functions unless you are using tail call recursion which doesn't use the stack Tail call recursion is exactly that, the function calls itself at the tail end of the function body - meaning it's the last instruction in the function. That way return data doesn't build up in the stack since there is nothing left to do after each function call finishes.
 
-## Script:
+
 
 * The name of a function is at the top of the function definition, but you may also put it inside the function definition as well.
 * This inner name creates a CPU instruction that jumps back up to the first instruction in that function.
@@ -445,9 +445,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Code Libraries Work
 
-## Setup: Understanding that coding is so much more about understanding the standard libraries of the language you are using than just understanding how to write the code correctly is an important lesson I think. If you can understand the standard libraries of your language, you can get so much more accomplished with less knowledge of algorithms and other deep concepts.
+Understanding that coding is so much more about understanding the standard libraries of the language you are using than just understanding how to write the code correctly is an important lesson I think. If you can understand the standard libraries of your language, you can get so much more accomplished with less knowledge of algorithms and other deep concepts.
 
-## Script:
+
 
 * Grouping multiple instructions together into a function is useful as is grouping multiple functions together into a library.
 * A function is a group of instructions that you want to use in your program more than once and a library is a group of functions that you want to use in more than one of your programs.
@@ -461,9 +461,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Data Can Change Itself
 
-## Setup: This is a setup to understand classes later on.
+This is a setup to understand classes later on.
 
-## Script:
+
 
 * Functions can be grouped together with other functions into libraries but they can also be grouped together with other functions that process the same data structure.
 * In fact, the data structure itself can hold a reference to these functions.
@@ -474,9 +474,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Pointers Work
 
-## Setup: A key, often misunderstood concept. Pointers exist when the data in RAM represents the address of other data in RAM. Pointers can be very useful in programming.
+A key, often misunderstood concept. Pointers exist when the data in RAM represents the address of other data in RAM. Pointers can be very useful in programming.
 
-## Script:
+
 
 * A pointer simply means the data at a RAM address represents another RAM address.
 * It's like the data is pointing to that other RAM address.
@@ -498,7 +498,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 ## Setup:
 
-## Script:
+
 
 * The layout of a data structure in RAM is always the same, even if that data structure is copied to multiple places in RAM.
 * There may be multiple employee data structures in RAM, for instance, representing different employees, but they will all have the same data fields in the same order in RAM.
@@ -518,9 +518,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Class Interfaces Work
 
-## Setup: A setup to generic interfaces.
+A setup to generic interfaces.
 
-## Script:
+
 
 * If two data structures objects have the same data fields in the same order in RAM it's possible for the compiler to treat them the same way.
 * If the compiler knows the Promote function pointer always starts at the 9th address down from the top of each object, for instance, it doesn't matter which class that object has, the compiler still knows how to Promote that object.
@@ -541,9 +541,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Interfaces Work
 
-## Setup: An explanation of interfaces as a (usually) fully abstract concept.
+An explanation of interfaces as a (usually) fully abstract concept.
 
-## Script:
+
 
 * If a compiler only has to know what fields come in what order to use an object, that interface can be defined separately of any particular class.
 * An interface just tells the compiler what particular fields an object has and where to find them, relative to the starting address of that object.
@@ -555,9 +555,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Interfaces are Useful
 
-## Setup: Understanding interfaces as "contracts" was never helpful for me. Understanding them as pre-programmed remote controls would have been much more helpful for me, I think.
+Understanding interfaces as "contracts" was never helpful for me. Understanding them as pre-programmed remote controls would have been much more helpful for me, I think.
 
-## Script:
+
 
 * Interfaces allow you to program to an abstraction, not a concrete implementation.
 * It's like your first day on the job you're given a remote control and told people will call you to press the buttons but you won't know what device the remote is hooked up to.
@@ -573,9 +573,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Indirection is Useful in Programming
 
-## Setup: Basically, an explanation of the reasoning behind the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967348424&usg=AOvVaw0pl7K1v0ppN2yOKR91TQRk)".
+Basically, an explanation of the reasoning behind the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967348424&usg=AOvVaw0pl7K1v0ppN2yOKR91TQRk)".
 
-## Script:
+
 
 * Writing code that does things indirectly, using interfaces for instance, is the heart of problem solving in programming.
 * There's a famous saying in programming that says "any problem in programming can be solved with another layer of indirection".
@@ -595,9 +595,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Using Mocking to Test Code
 
-## Setup: I wish I had really gotten a clear understanding of what "mocking" was early on. Testing seemed like such an abstract and even arcane subject to me when I first started out, especially as it relates to mocking.
+I wish I had really gotten a clear understanding of what "mocking" was early on. Testing seemed like such an abstract and even arcane subject to me when I first started out, especially as it relates to mocking.
 
-## Script:
+
 
 * Interfaces can be used to control mock devices that don't actually exist but that do things a real device would do.
 * Why would you want to do that?
@@ -614,11 +614,11 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Git Works
 
-## Setup: Oh git. How critical you are to coding yet how seemingly complex and arcane. This is the first of several sections to really break down git and try to explain it slowly and simply.
+Oh git. How critical you are to coding yet how seemingly complex and arcane. This is the first of several sections to really break down git and try to explain it slowly and simply.
 
 ## Specifically about git branches, I did NOT get this concept early on. I didn't understand that the entire set of files and folder for the application were kept inside a branch, and that you could have multiple branches and each one could have the ENTIRE set of files and folders inside it, usually only with a small set of changes between them.
 
-## Script:
+
 
 * When programmers make changes to code, they are changing the contents of text files.
 * Those text files are usually a copy of some text files sitting on a remote computer.
@@ -656,7 +656,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Git Ready
 
-## Setup: Git only handles the text files for an application that are fed to a compiler, not the results of the compiler which can be the actual binary files with instructions for the CPU.
+Git only handles the text files for an application that are fed to a compiler, not the results of the compiler which can be the actual binary files with instructions for the CPU.
 
 * Changes to text files that are tracked by version control software do not immediately show up in the live application, even after a branch is pushed from the developer's machine to the remote server.
 * After all, a branch only holds the text files for a program, not the executable files.
@@ -673,9 +673,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Operating Systems Are Needed
 
-## Setup: ...
+...
 
-## Script:
+
 
 * Running a program requires a program already running.
 * That program calls a function you defined, usually called main, to kick off your program.
@@ -689,9 +689,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Operating Systems Multitask
 
-## Setup: ...
+...
 
-## Script:
+
 
 * The operating system kernel contains some of the most secure low-level code in the computer.
 * It does things like make sure the CPU isn't spending too much time processing the instructions from a single application and neglecting the others.
@@ -703,9 +703,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Executable Files Work
 
-## Setup: ...
+...
 
-## Script:
+
 
 * When a program is compiled, the compiler goes through a series of stages that each produces its own output.
 * The output from each stage becomes the input to the next.
@@ -724,9 +724,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # What is a Process and What is a Thread?
 
-## Setup: ...
+...
 
-## Script:
+
 
 * When an executable file is loaded into RAM it becomes part of a process created by the operating system.
 * A process gets its own complete copy of RAM, or at least the operating system and hardware coordinate to make the process think it has its own copy of RAM.
@@ -746,9 +746,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Operating Systems Schedule Threads
 
-## Setup: ...
+...
 
-## Script:
+
 
 * With multiple applications open, there are usually way more threads those applications need to run at any one time than there are logical processors available.
 * The operating system kernel runs a scheduler program constantly that schedules these threads to be executed from a prioritized queue it maintains of active threads.
@@ -766,9 +766,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Operating System Events Are Handled
 
-## Setup: ...
+...
 
-## Script:
+
 
 * Operating systems capture events that occur in each window on the screen and then call the associated application code you wrote for that application making each event available to it.
 * Your main code runs a set of instructions in a loop checking these events to see if there is one it cares about.
@@ -784,9 +784,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How the Operating System Interacts with Hardware
 
-## Setup: ...
+...
 
-## Script:
+
 
 * Hardware devices are accessed via addresses just like RAM data.
 * You can see these addresses in Device Manager on Windows under the "Resources by Connection" view.
@@ -798,9 +798,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How GPUs Work
 
-## Setup: ...
+...
 
-## Script:
+
 
 * Displaying complex graphics can be costly for CPUs as they are designed to process a long thread of instructions as quickly as possible.
 * GPUs are more fit to that purpose as they have lots more processors that can process multiple parts of the display at the same time.
@@ -812,9 +812,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Computer Snapshots Work
 
-## Setup: ...
+...
 
-## Script:
+
 
 * A program proceeds one snapshot of the CPU at a time.
 * You could save a snapshot of the data in the CPU and RAM, turn the computer off and on, and then load those snapshots back to the CPU and RAM and the program would continue as if nothing happened.
@@ -827,9 +827,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # Why Config Files are Useful in Cloud Computing
 
-## Setup: ...
+...
 
-## Script:
+
 
 * A program tells the computer exactly what to do step by step.
 * However as cloud computing advances, you don't necessarily know what specific computer or even operating system will be running your program.
@@ -841,9 +841,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Data Encoding Works
 
-## Setup: ...
+...
 
-## Script:
+
 
 * Data can be encoded in bytes in various ways.
 * Sometimes the program reading a file knows exactly what the bytes mean based on where they're located in the file.
@@ -860,9 +860,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Relational Databases and SQL Work
 
-## Setup: ...
+...
 
-## Script:
+
 
 * When large amounts of data need to be stored on a computer and processed quickly, databases are often used.
 * Databases store data in binary files to improve processing speed and to reduce file sizes so more data can be stored in the same number of bytes.
@@ -878,9 +878,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How Computers Send Data Over a Network
 
-## Setup: ...
+...
 
-## Script:
+
 
 * When computers need to send each other data, they do so in a similar way to how we communicate.
 * If you're in a conversation with friends and you start talking at the same time as another friend, you both normally stop talking right away.
@@ -902,9 +902,9 @@ Each video starts with the working title followed by a setup of the video that m
 
 # How HTTP Requests Work
 
-## Setup: ...
+...
 
-## Script:
+
 
 * An HTTP request has a text header with name and value pairs separated by colons.
 * After these headers is an empty line followed by the body of the HTTP request, if there is one.
