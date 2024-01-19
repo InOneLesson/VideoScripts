@@ -428,7 +428,7 @@ The basic concept of variables is important to understand as the name for an add
 
 This is the simplest explanation of recursion that I can think of, it's a named loop. It's implemented in assembly the exact same way as a regular loop, a jump back up to an earlier instruction in RAM over and over. It's just that recursive loops have names for the earlier instruction (the function name) and they often use the stack to keep track of data in the loop.
 
-## Stack overflows set the limit for recursive functions unless you are using tail call recursion which doesn't use the stack Tail call recursion is exactly that, the function calls itself at the tail end of the function body - meaning it's the last instruction in the function. That way return data doesn't build up in the stack since there is nothing left to do after each function call finishes.
+Stack overflows set the limit for recursive functions unless you are using tail call recursion which doesn't use the stack Tail call recursion is exactly that, the function calls itself at the tail end of the function body - meaning it's the last instruction in the function. That way return data doesn't build up in the stack since there is nothing left to do after each function call finishes.
 
 
 
@@ -496,7 +496,7 @@ A key, often misunderstood concept. Pointers exist when the data in RAM represen
 
 # How Classes Work
 
-## Setup:
+...
 
 
 
@@ -616,7 +616,7 @@ I wish I had really gotten a clear understanding of what "mocking" was early on.
 
 Oh git. How critical you are to coding yet how seemingly complex and arcane. This is the first of several sections to really break down git and try to explain it slowly and simply.
 
-## Specifically about git branches, I did NOT get this concept early on. I didn't understand that the entire set of files and folder for the application were kept inside a branch, and that you could have multiple branches and each one could have the ENTIRE set of files and folders inside it, usually only with a small set of changes between them.
+Specifically about git branches, I did NOT get this concept early on. I didn't understand that the entire set of files and folder for the application were kept inside a branch, and that you could have multiple branches and each one could have the ENTIRE set of files and folders inside it, usually only with a small set of changes between them.
 
 
 
