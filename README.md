@@ -274,7 +274,7 @@ This is an important concept to understand I think. You can't represent a value 
 * This technique extends all the way out to hard drive data that is stored in large chunks called pages, usually 4,096 bytes in size.
 * The data in a running program is split into sections that are aligned according to these pages so they can easily be swapped in and out to the hard drive if RAM fills up.
 
-# Why Computers Use Horizontal Numbers
+# How Computers Store Horizontal Numbers Vertically
 
 This is often called little-endian and big-endian, but those name seemed so confusing to me when I first started. I think just explaining them for what they are would have been so much more helpful.
 
