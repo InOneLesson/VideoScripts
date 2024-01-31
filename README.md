@@ -11,8 +11,6 @@ Each video starts with the working title followed by a setup of the video that m
 
 This was by far my biggest misconception when learning how computers work. I thought bits were discrete little pulses of energy that traveled down a wire. I didn't realize that a bit exists everywhere on a wire at once and that that fact was pivotal to how computers worked.
 
-
-
 * You've probably seen videos like this where bits move down a wire like cars on a road.
 * That's not how bits works.
 * The bit is the state of the whole wire, not something traveling down the wire.
@@ -115,8 +113,6 @@ The ALU is used for nearly every operation in the CPU. It's important to get a b
 
 Programming truly is just writing a to-do list for computers to follow. This video introduces that idea.
 
-
-
 * Computer memory is just like a numbered todo list where the numbers are written in pen but the items are written in pencil and can change.
 * This todo list is a little unique, though.
 * The todo items are tiny and can only hold 8 characters.
@@ -136,8 +132,6 @@ Programming truly is just writing a to-do list for computers to follow. This vid
 
 How can "10" and "10" mean two different things? They are the same number. However, when you understand that there is an even more fundamental concept that numbers, a count, then you can understand that two numbers that look the same can represent different counts depending upon what numbering system is used.
 
-
-
 * RAM stores data as binary numbers.
 * Binary numbers are just like regular decimal numbers except they can only use two characters for each digit instead of ten.
 * The counting system still works the same though.
@@ -152,8 +146,6 @@ How can "10" and "10" mean two different things? They are the same number. Howev
 # Computer Memory Has Two Lists of Numbers, Not One
 
 This was a misconception I had for many years, I thought RAM only had data. I didn't realize each byte of data had an address, another binary number. Knowing about addresses is pivotal to knowing about pointers and how computers work in general.
-
-
 
 * RAM stores data at specific addresses.
 * That data and its address are each binary numbers.
@@ -170,8 +162,6 @@ This was a misconception I had for many years, I thought RAM only had data. I di
 
 I didn't realize that I had been conflating these two things until recently. When someone says "byte", sometimes they mean the value of the binary number regardless of its location in RAM and sometimes they mean the location of the binary number in RAM regardless of its value. Separating these two senses of the word early for beginners who are learning programming would be very helpful to them I think.
 
-
-
 * The term "byte" may refer to two different but related things: a value stored in RAM regardless of its location or a location in RAM regardless of its value.
 * For instance, the decimal number 53 can be stored in a byte.
 * We might not care where that byte is, only what its value is.
@@ -185,8 +175,6 @@ I didn't realize that I had been conflating these two things until recently. Whe
 
 This is an interesting one for me. Since bytes in RAM are addressed using numbers, it makes relative addressing possible. Relative addressing is critical to loading programs into memory, indexing into arrays, and all kinds of other techniques in programming. They would not be possible if something like numbers weren't used to address bytes in RAM since numbers have the concept of "next" and "previous".
 
-
-
 * Not only do RAM addresses never change, they are always in order, starting at address 0 and increasing by one.
 * This allows programmers to always be able to refer to an address relative to any other address, the 3rd address after the starting address, for instance.
 * That starting address may end up being different each time a program is loaded into RAM and run, but it doesn't matter because the instructions and data for that program are always at the same location in RAM relative to the starting address.
@@ -195,8 +183,6 @@ This is an interesting one for me. Since bytes in RAM are addressed using number
 # RAM Addresses Start at 0
 
 This is not as big of a deal, but still interesting enough to include I think. There were a lot of times early on when I was learning programming where it confused me that the 3rd item in a list has a "2" for its index. Off-by-one errors in programming are common because of this concept which is why I wanted to teach it early.
-
-
 
 * RAM addresses start at 0 which means the first address in RAM is 0, not 1.
 * This makes all RAM addresses off by 1, often including relative addresses.
@@ -214,8 +200,6 @@ This is not as big of a deal, but still interesting enough to include I think. T
 
 Rarely do you look at raw data in RAM using anything other than hexadecimal values. That tends to lead people to think that hexadecimal values are somehow pivotal to the way computers work. They're not. They just represent the 1s and 0s of computing in a more compact way, which is why they're used so often. However, it's important to understand that the computer doesn't actually use hexadecimal values in any way. They're just a way to represent binary values in a more programmer-friendly way.
 
-
-
 * Binary numbers are often converted into decimal or even hexadecimal notation to make them easier to read.
 * Hex means 6 and deci means 10 so added together that's 16 characters that can be used in each column.
 * The extra 6 characters used in hexadecimal above and beyond the normal decimal numbers, are actually letters.
@@ -229,8 +213,6 @@ Rarely do you look at raw data in RAM using anything other than hexadecimal valu
 
 This is one of the biggest lessons I would have wanted to know early on. How do text files actually store text?
 
-
-
 * Programs are written in text files.
 * When you open up a text file, each letter you see on the screen is represented by a specific pattern of colored pixels created from a font file somewhere.
 * Neither the pixel pattern nor the font is encoded in the text file, though.
@@ -243,8 +225,6 @@ This is one of the biggest lessons I would have wanted to know early on. How do 
 # In Computers, Every Letter is a Number and Every Number is a Number
 
 Unicode is such an interesting system. You use numbers to represent raw concepts. Those numbers can then have another layer of abstraction between the number itself and its binary representation in RAM using UTF. This is a great example of the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967335439&usg=AOvVaw0-FeoJmXUnBx-Np46K7AZ1)" where adding another layer of indirection can solve a problem in programming.
-
-
 
 * Unicode is a list of numbers called code points where each code point represents a specific concept.
 * That concept can also be represented by words like "lowercase letter 'r'".
@@ -263,8 +243,6 @@ Unicode is such an interesting system. You use numbers to represent raw concepts
 
 This is an important concept to understand I think. You can't represent a value using anything smaller than a byte (even true/false - unless you've packed multiple true/false values into one byte: often called "flags") and usually you have to move multiple bytes at the same time due to hardware constraints.
 
-
-
 * Bytes are copied from place to place in groups of the same size to speed things up, even if there are more bytes in that group than is needed to store your data.
 * On older 32-bit computers, the CPU copied data from RAM in 32-bit chunks, or 4 bytes at a time.
 * Your data, though, may only need three bytes to represent it and not 4.
@@ -278,8 +256,6 @@ This is an important concept to understand I think. You can't represent a value 
 
 This is often called little-endian and big-endian, but those name seemed so confusing to me when I first started. I think just explaining them for what they are would have been so much more helpful.
 
-
-
 * A number grows from right to left, but conceptually the data in RAM grows from top to bottom.
 * So when storing a large number in RAM, which end do you put in RAM first?
 * The little end of the number is the one with the little numbers like 10.
@@ -292,8 +268,6 @@ This is often called little-endian and big-endian, but those name seemed so conf
 # Code Does Not Run on Computers
 
 The phrase "run the code" makes people think that the code they type into a text editor can eventually just run directly on the CPU. I don't think it's always clear that the code is really just a set of instructions for another program to interpret, the compiler (or interpreter). This lesson comes after the previous lessons explaining how text files work which build up to this lesson so people know what is actually happening when you are tying code into a text file and why that can't be directly run by the CPU.
-
-
 
 * When programming you press keys that are stored as bytes in a text file.
 * Those bytes represent Unicode code points.
@@ -313,8 +287,6 @@ The phrase "run the code" makes people think that the code they type into a text
 
 This is critical to understand I think. Data types don't exist anywhere in the computer. They're not necessary for writing low-level machine code. They're only used by compilers to help the programmer reduce errors when writing high-level code. Ultimately, the CPU doesn't have a concept of data types.
 
-
-
 * Writing instructions for a compiler instead of a CPU can make programming a lot easier, but it can also change your mental model as you often have to think about how the compiler will interpret your instructions, not just the CPU.
 * In fact, a lot of the instructions you give the compiler, such as data types, are never converted to CPU instructions.
 * CPUs don't care about data types, only bytes.
@@ -329,8 +301,6 @@ This is critical to understand I think. Data types don't exist anywhere in the c
 
 Understanding that the compiler is not the programming language and that the programming language is just a set of standards that the compiler enforces on text files is important, I think. These concepts can easily be conflated in the mind of beginners I think. Explicitly separating them out is important.
 
-
-
 * The program you write must meet the exact specifications of the language you are using.
 * The language is just a set of standards and the compiler enforces those standards.
 * Your compiler program needs to be able to understand exactly what you are trying to do so it can create CPU instructions for you.
@@ -343,8 +313,6 @@ Understanding that the compiler is not the programming language and that the pro
 # How to See Every C Program
 
 Getting an initial grasp on the visual structure of a program is important to beginners, I think. Being able to just look at a formatted text file and just kind of have a sense of what's going on is important. This video will attempt to do that for the C programming language which so many other languages are based off of.
-
-
 
 * Most people who create new programming languages, in other words new standards on how a compiler should treat a text file, use existing ideas from other programming languages.
 * This tends to lead towards certain programming language styles with key similarities that help programmers learn new languages in that style more easily.
@@ -366,8 +334,6 @@ Getting an initial grasp on the visual structure of a program is important to be
 # How Programming Functions Stack Up
 
 This is such a cool thing to follow in my opinion, understand how functions use the stack. Since modern programs use the stack for almost everything, and function calls can become deeply nested, it's important to walk slowly through how the stack works so beginners can get a good concept of it.  
-
-
 
 * Under the hood, functions are called using special CPU instructions that let your code continue where it left off when the function code is finished.
 * The CPU has a special register called the stack pointer that keeps up with the top of a stack of data used by these unfinished functions.
@@ -392,8 +358,6 @@ This is such a cool thing to follow in my opinion, understand how functions use 
 
 This concept of a "doing list" made so much sense to me as an explanation for how the stack works. It really helps you understand what the purpose of the stack is and why its so important.
 
-
-
 * The stack is like a doing list.
 * A doing  list is like a todo list but items are added to it backwards, from the bottom up, and then erased top down when they're completed.
 * The doing list keeps track of all the things you're in the middle of doing and whatever you're currently doing is always at the top of the list.
@@ -415,8 +379,6 @@ This concept of a "doing list" made so much sense to me as an explanation for ho
 
 The basic concept of variables is important to understand as the name for an address in RAM.
 
-
-
 * A compiler allows you to name certain addresses in RAM so you can store data at those addresses and easily refer back to them later.
 * Names given to a RAM address where data is kept is usually called a variable since the value of that data can vary over time.
 * The variable named "x", for instance, refers to the first of possibly several RAM addresses where the bytes represent the value of "x".
@@ -429,8 +391,6 @@ The basic concept of variables is important to understand as the name for an add
 This is the simplest explanation of recursion that I can think of, it's a named loop. It's implemented in assembly the exact same way as a regular loop, a jump back up to an earlier instruction in RAM over and over. It's just that recursive loops have names for the earlier instruction (the function name) and they often use the stack to keep track of data in the loop.
 
 Stack overflows set the limit for recursive functions unless you are using tail call recursion which doesn't use the stack Tail call recursion is exactly that, the function calls itself at the tail end of the function body - meaning it's the last instruction in the function. That way return data doesn't build up in the stack since there is nothing left to do after each function call finishes.
-
-
 
 * The name of a function is at the top of the function definition, but you may also put it inside the function definition as well.
 * This inner name creates a CPU instruction that jumps back up to the first instruction in that function.
@@ -447,8 +407,6 @@ Stack overflows set the limit for recursive functions unless you are using tail 
 
 Understanding that coding is so much more about understanding the standard libraries of the language you are using than just understanding how to write the code correctly is an important lesson I think. If you can understand the standard libraries of your language, you can get so much more accomplished with less knowledge of algorithms and other deep concepts.
 
-
-
 * Grouping multiple instructions together into a function is useful as is grouping multiple functions together into a library.
 * A function is a group of instructions that you want to use in your program more than once and a library is a group of functions that you want to use in more than one of your programs.
 * Libraries keep you from having to write the same functions over and over again since they can be referenced by any program that needs them.
@@ -463,8 +421,6 @@ Understanding that coding is so much more about understanding the standard libra
 
 This is a setup to understand classes later on.
 
-
-
 * Functions can be grouped together with other functions into libraries but they can also be grouped together with other functions that process the same data structure.
 * In fact, the data structure itself can hold a reference to these functions.
 * Data structures don't have to be a single element like a number or letter, they can also be larger structures with those elements inside.
@@ -475,8 +431,6 @@ This is a setup to understand classes later on.
 # How Pointers Work
 
 A key, often misunderstood concept. Pointers exist when the data in RAM represents the address of other data in RAM. Pointers can be very useful in programming.
-
-
 
 * A pointer simply means the data at a RAM address represents another RAM address.
 * It's like the data is pointing to that other RAM address.
@@ -498,8 +452,6 @@ A key, often misunderstood concept. Pointers exist when the data in RAM represen
 
 ...
 
-
-
 * The layout of a data structure in RAM is always the same, even if that data structure is copied to multiple places in RAM.
 * There may be multiple employee data structures in RAM, for instance, representing different employees, but they will all have the same data fields in the same order in RAM.
 * This is why the functions that process this type of data structure can process any particular copy of that data structure.
@@ -519,8 +471,6 @@ A key, often misunderstood concept. Pointers exist when the data in RAM represen
 # How Class Interfaces Work
 
 A setup to generic interfaces.
-
-
 
 * If two data structures objects have the same data fields in the same order in RAM it's possible for the compiler to treat them the same way.
 * If the compiler knows the Promote function pointer always starts at the 9th address down from the top of each object, for instance, it doesn't matter which class that object has, the compiler still knows how to Promote that object.
@@ -543,8 +493,6 @@ A setup to generic interfaces.
 
 An explanation of interfaces as a (usually) fully abstract concept.
 
-
-
 * If a compiler only has to know what fields come in what order to use an object, that interface can be defined separately of any particular class.
 * An interface just tells the compiler what particular fields an object has and where to find them, relative to the starting address of that object.
 * Any class can then implement that interface, as long as it has all the fields defined in the interface.
@@ -556,8 +504,6 @@ An explanation of interfaces as a (usually) fully abstract concept.
 # Why Interfaces are Useful
 
 Understanding interfaces as "contracts" was never helpful for me. Understanding them as pre-programmed remote controls would have been much more helpful for me, I think.
-
-
 
 * Interfaces allow you to program to an abstraction, not a concrete implementation.
 * It's like your first day on the job you're given a remote control and told people will call you to press the buttons but you won't know what device the remote is hooked up to.
@@ -574,8 +520,6 @@ Understanding interfaces as "contracts" was never helpful for me. Understanding 
 # Why Indirection is Useful in Programming
 
 Basically, an explanation of the reasoning behind the "[fundamental theorem of software engineering](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering&sa=D&source=editors&ust=1705519967348424&usg=AOvVaw0pl7K1v0ppN2yOKR91TQRk)".
-
-
 
 * Writing code that does things indirectly, using interfaces for instance, is the heart of problem solving in programming.
 * There's a famous saying in programming that says "any problem in programming can be solved with another layer of indirection".
@@ -597,8 +541,6 @@ Basically, an explanation of the reasoning behind the "[fundamental theorem of s
 
 I wish I had really gotten a clear understanding of what "mocking" was early on. Testing seemed like such an abstract and even arcane subject to me when I first started out, especially as it relates to mocking.
 
-
-
 * Interfaces can be used to control mock devices that don't actually exist but that do things a real device would do.
 * Why would you want to do that?
 * To test your code to see if everything still works even after you've made a change to it.
@@ -618,8 +560,6 @@ Oh git. How critical you are to coding yet how seemingly complex and arcane. Thi
 
 Specifically about git branches, I did NOT get this concept early on. I didn't understand that the entire set of files and folder for the application were kept inside a branch, and that you could have multiple branches and each one could have the ENTIRE set of files and folders inside it, usually only with a small set of changes between them.
 
-
-
 * When programmers make changes to code, they are changing the contents of text files.
 * Those text files are usually a copy of some text files sitting on a remote computer.
 * That remote computer exists so that multiple programmers can work on a program at the same time.
@@ -630,10 +570,10 @@ Specifically about git branches, I did NOT get this concept early on. I didn't u
 * All the history of changes that have ever been made, along with all the actual text from old versions of the text files, are kept in what's called a repository, or repo for short
 * The repo is just the name used for the whole project history for a single application
 * However any particular version of the application is kept in what's called a branch
-* The entire set of text files for the current version of the application are kept in a single branch, for instance- often called the main branch.
-* A single repo may have many branches within it, with each branch usually containing the entire source code for that program but each with a slightly different version of the application.
+* The entire set of text files for the current version of the application are kept in a single branch, for instance, often called the main branch.
+* A single repo may have many branches within it, with each branch usually containing the entire source code for that program but each branch has a slightly different version of the application.
 * Maybe one branch is that main branch that has the code used in the live system, while another branch has nearly the exact same code except with a few small changes to fix a bug found in the live system.
-* The code in the bug fix branch can then be merged into the main branch once the developer is satisfied that the bug is fixed.
+* The code in the bug-fix branch can then be merged into the main branch once the developer is satisfied that the bug is fixed.
 * A merger just updates one set of text files in one branch with the same set of text files in another branch, often with minor changes
 * So a single branch within the repository will consist of all the files needed for the application.
 * This means that a developer only works on one specific branch at a time.
@@ -675,8 +615,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * Running a program requires a program already running.
 * That program calls a function you defined, usually called main, to kick off your program.
 * The Main instructions you wrote then call whatever other functions you called in your program that do all the work.
@@ -691,8 +629,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * The operating system kernel contains some of the most secure low-level code in the computer.
 * It does things like make sure the CPU isn't spending too much time processing the instructions from a single application and neglecting the others.
 * To prevent this, the kernel sets a hardware timer that will interrupt the CPU when the timer expires.
@@ -704,8 +640,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 # How Executable Files Work
 
 ...
-
-
 
 * When a program is compiled, the compiler goes through a series of stages that each produces its own output.
 * The output from each stage becomes the input to the next.
@@ -725,8 +659,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 # What is a Process and What is a Thread?
 
 ...
-
-
 
 * When an executable file is loaded into RAM it becomes part of a process created by the operating system.
 * A process gets its own complete copy of RAM, or at least the operating system and hardware coordinate to make the process think it has its own copy of RAM.
@@ -748,8 +680,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * With multiple applications open, there are usually way more threads those applications need to run at any one time than there are logical processors available.
 * The operating system kernel runs a scheduler program constantly that schedules these threads to be executed from a prioritized queue it maintains of active threads.
 * When a thread finishes, its allotted time slice has elapsed, or a higher-priority thread needs to run, the kernel pushes the thread's current state, including all the CPU registers, onto the stack and then pops the state of another thread off the stack and into the CPU registers to begin executing.
@@ -768,8 +698,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * Operating systems capture events that occur in each window on the screen and then call the associated application code you wrote for that application making each event available to it.
 * Your main code runs a set of instructions in a loop checking these events to see if there is one it cares about.
 * Each application may be using multiple windows even though it may only appear to have one.
@@ -786,8 +714,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * Hardware devices are accessed via addresses just like RAM data.
 * You can see these addresses in Device Manager on Windows under the "Resources by Connection" view.
 * Devices either use the same memory addresses as RAM, except the data is routed to the device instead, or they use a separate address bus used just for devices.
@@ -800,8 +726,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * Displaying complex graphics can be costly for CPUs as they are designed to process a long thread of instructions as quickly as possible.
 * GPUs are more fit to that purpose as they have lots more processors that can process multiple parts of the display at the same time.
 * An image is typically processed by a GPU by splitting it up into equal sized blocks and processing those blocks in parallel.
@@ -813,8 +737,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 # How Computer Snapshots Work
 
 ...
-
-
 
 * A program proceeds one snapshot of the CPU at a time.
 * You could save a snapshot of the data in the CPU and RAM, turn the computer off and on, and then load those snapshots back to the CPU and RAM and the program would continue as if nothing happened.
@@ -829,8 +751,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * A program tells the computer exactly what to do step by step.
 * However as cloud computing advances, you don't necessarily know what specific computer or even operating system will be running your program.
 * This means you may not know exactly how to tell the computer what you want it to do.
@@ -842,8 +762,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 # How Data Encoding Works
 
 ...
-
-
 
 * Data can be encoded in bytes in various ways.
 * Sometimes the program reading a file knows exactly what the bytes mean based on where they're located in the file.
@@ -862,8 +780,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * When large amounts of data need to be stored on a computer and processed quickly, databases are often used.
 * Databases store data in binary files to improve processing speed and to reduce file sizes so more data can be stored in the same number of bytes.
 * Databases pack the data elements together into rows and then pack those rows together into what are called tables.
@@ -879,8 +795,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 # How Computers Send Data Over a Network
 
 ...
-
-
 
 * When computers need to send each other data, they do so in a similar way to how we communicate.
 * If you're in a conversation with friends and you start talking at the same time as another friend, you both normally stop talking right away.
@@ -904,8 +818,6 @@ Git only handles the text files for an application that are fed to a compiler, n
 
 ...
 
-
-
 * An HTTP request has a text header with name and value pairs separated by colons.
 * After these headers is an empty line followed by the body of the HTTP request, if there is one.
 * HTTP requests include a verb at the very top that tells the server what the client wants to do.
@@ -926,33 +838,21 @@ https://www.youtube.com/watch?v=CM2Tfvxrs74&ab_channel=DrJoshStroschein
 
 https://techcommunity.microsoft.com/t5/windows-blog-archive/pushing-the-limits-of-windows-processes-and-threads/ba-p/723824
 “Every thread has both a user-mode stack, which is what I’ve been talking about, but they also have a kernel-mode stack that’s used when they run in kernel mode, for example while executing system calls.”
-
-
 https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode
 
 https://www.codeguru.com/windows/how-do-windows-nt-system-calls-really-work/
 
 https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/virtual-address-spaces
-
-
 GPUs - How CUDA Works
 https://www.nvidia.com/en-us/on-demand/session/gtcspring22-s41487/
 How GPU Computing Works
 https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s31151/
-
-
 the minimum access size of 64 bytes, which matches the cache line size used by x86 microprocessors.
 https://en.wikipedia.org/wiki/DDR5_SDRAM
 
-
-
 Virtual memory requires the processor to translate virtual addresses generated by the program into physical addresses in main memory. The portion of the processor that does this translation is known as the memory management unit (MMU). The fast path through the MMU can perform those translations stored in the translation lookaside buffer (TLB), which is a cache of mappings from the operating system's page table, segment table, or both.
 https://en.wikipedia.org/wiki/CPU_cache
-
-
 https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-
-
-
 Most of the requests that are sent to device drivers are packaged in I/O request packets (IRPs). 
 https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/i-o-request-packets
 
@@ -961,8 +861,6 @@ https://www.travismathison.com/posts/PEB_TEB_TIB-Structure-Offsets/
 https://www.entsoftsol.com/Home/Blog/memory-and-disk-io-in-windows
 
 https://www.microsoftpressstore.com/articles/article.aspx?p=2201309&seqNum=3
-
-
 
 https://www.thewindowsclub.com/ntoskrnl-ntkrnlpa-exe-win32k-sys-files
 
@@ -973,8 +871,6 @@ TCP Fundamentals Part 1 // TCP/IP Explained with Wireshark
 https://www.youtube.com/watch?v=xdQ9sgpkrX8
 
 https://www.informit.com/articles/article.aspx?p=21320&seqNum=4
-
-
 How to Find Which Process is Listening on a Given Port in Windows 10
 https://www.top-password.com/blog/find-which-process-is-listening-on-given-port-in-windows/
 
@@ -989,8 +885,6 @@ some architectures, such as IA64, port I/O occupy physical address space
 
 The cmp instruction computes the subtraction and sets flags according to the result, but throws the result away.
 https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/x86-instructions
-
-
 
 C# Managed object internals, Part 1. The layout
 https://devblogs.microsoft.com/premier-developer/managed-object-internals-part-1-layout/
