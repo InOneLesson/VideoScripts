@@ -11,7 +11,7 @@ Each video starts with the working title followed by a setup of the video that m
 
 This was by far my biggest misconception when learning how computers work. I thought bits were discrete little pulses of energy that traveled down a wire. I didn't realize that a bit exists everywhere on a wire at once and that that fact was pivotal to how computers worked.
 
-* You've probably seen videos like this where bits move down a wire like cars on a road.
+* You've probably seen videos like [this](https://www.pexels.com/video/a-circuit-board-with-blue-lines-on-it-6466100/) where bits move down a wire like cars on a road.
 * That's not how bits works.
 * The bit is the state of the whole wire, not something traveling down the wire.
 * When the wire has a bit value of 1, that means the entire wire has an electric field present on it.
